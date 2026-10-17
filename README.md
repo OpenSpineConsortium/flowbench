@@ -48,6 +48,9 @@ and an audit that leaves harness errors out and names them.
   over the runs finished, exact McNemar on the paired instances, cost and
   time with the paired token ratio, the review table, one row per
   instance; harness errors and excluded runs left out and named.
+- `flowbench/bundle.py`: a tag's runs as a committed record (result,
+  prediction, events, audit, the harness's report and each agent's tool
+  counts), with the agents' text and every host path left out.
 - `flowbench/fake_agent.py`: the agent of a rehearsal.
 - `flowbench/arms/`: solo, script, symphony (arms/README.md).
 

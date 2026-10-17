@@ -1,0 +1,20 @@
+{"arm": "symphony", "attempt": 1, "fake": false, "image": "swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-14894:latest", "instance": "scikit-learn__scikit-learn-14894", "kind": "prepared", "seq": 0, "t": 2.469, "ts": 1792276045.42}
+{"agents": ["work"], "kind": "stage_started", "seq": 1, "stage": "work", "t": 0.0, "ts": 1792276045.42}
+{"agent": "work", "fake": false, "kind": "agent_started", "seq": 2, "stage": "work", "t": 0.001, "ts": 1792276045.421}
+{"agent": "work", "duration_ms": 30707, "kind": "agent_ended", "seq": 3, "stage": "work", "status": "success", "t": 30.711, "ts": 1792276076.131}
+{"duration_ms": 30711, "kind": "stage_ended", "missing": [], "seq": 4, "stage": "work", "t": 30.712, "ts": 1792276076.131}
+{"agents": ["review-correctness", "review-conventions", "review-path"], "kind": "stage_started", "seq": 5, "stage": "review", "t": 30.713, "ts": 1792276076.132}
+{"agent": "review-path", "fake": false, "kind": "agent_started", "seq": 6, "stage": "review", "t": 30.715, "ts": 1792276076.134}
+{"agent": "review-conventions", "fake": false, "kind": "agent_started", "seq": 7, "stage": "review", "t": 30.715, "ts": 1792276076.135}
+{"agent": "review-correctness", "fake": false, "kind": "agent_started", "seq": 8, "stage": "review", "t": 30.716, "ts": 1792276076.135}
+{"agent": "review-conventions", "duration_ms": 14184, "kind": "agent_ended", "seq": 9, "stage": "review", "status": "success", "t": 44.901, "ts": 1792276090.321}
+{"agent": "review-correctness", "duration_ms": 16161, "kind": "agent_ended", "seq": 10, "stage": "review", "status": "success", "t": 46.879, "ts": 1792276092.299}
+{"agent": "review-path", "duration_ms": 22580, "kind": "agent_ended", "seq": 11, "stage": "review", "status": "success", "t": 53.297, "ts": 1792276098.717}
+{"duration_ms": 22585, "kind": "stage_ended", "missing": [], "seq": 12, "stage": "review", "t": 53.298, "ts": 1792276098.718}
+{"agents": ["answer"], "kind": "stage_started", "seq": 13, "stage": "answer", "t": 53.299, "ts": 1792276098.719}
+{"agent": "answer", "fake": false, "kind": "agent_started", "seq": 14, "stage": "answer", "t": 53.3, "ts": 1792276098.72}
+{"agent": "answer", "duration_ms": 12922, "kind": "agent_ended", "seq": 15, "stage": "answer", "status": "success", "t": 66.224, "ts": 1792276111.644}
+{"duration_ms": 12926, "kind": "stage_ended", "missing": [], "seq": 16, "stage": "answer", "t": 66.225, "ts": 1792276111.644}
+{"bytes": 2389, "kind": "patch_taken", "seq": 17, "t": 66.243, "ts": 1792276111.663}
+{"kind": "scored", "reason": "resolved", "resolved": true, "seq": 18, "t": 93.737, "ts": 1792276139.157}
+{"excluded": false, "harness_error": false, "kind": "finished", "resolved": true, "seq": 19, "t": 94.53, "ts": 1792276139.95}

@@ -1,0 +1,24 @@
+{
+  "build": {
+    "Bash": 4,
+    "Read": 1
+  },
+  "review-conventions": {
+    "Bash": 2
+  },
+  "review-correctness": {
+    "Bash": 2
+  },
+  "review-path": {
+    "Bash": 3
+  },
+  "stack": {
+    "Bash": 3
+  },
+  "verify-conventions-1": {
+    "Bash": 3
+  },
+  "verify-conventions-2": {
+    "Bash": 3
+  }
+}

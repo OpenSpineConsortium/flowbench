@@ -1,0 +1,22 @@
+{"arm": "script", "attempt": 1, "fake": false, "image": "swebench/sweb.eval.x86_64.django_1776_django-12708:latest", "instance": "django__django-12708", "kind": "prepared", "seq": 0, "t": 5.446, "ts": 1792276721.429}
+{"agents": ["build"], "kind": "stage_started", "seq": 1, "stage": "build", "t": 0.0, "ts": 1792276721.43}
+{"agent": "build", "fake": false, "kind": "agent_started", "seq": 2, "stage": "build", "t": 0.002, "ts": 1792276721.431}
+{"agent": "build", "duration_ms": 25532, "kind": "agent_ended", "seq": 3, "stage": "build", "status": "success", "t": 25.537, "ts": 1792276746.966}
+{"duration_ms": 25537, "kind": "stage_ended", "missing": [], "seq": 4, "stage": "build", "t": 25.537, "ts": 1792276746.967}
+{"agents": ["stack"], "kind": "stage_started", "seq": 5, "stage": "stack", "t": 25.539, "ts": 1792276746.968}
+{"agent": "stack", "fake": false, "kind": "agent_started", "seq": 6, "stage": "stack", "t": 25.539, "ts": 1792276746.969}
+{"agent": "stack", "duration_ms": 13891, "kind": "agent_ended", "seq": 7, "stage": "stack", "status": "success", "t": 39.432, "ts": 1792276760.861}
+{"duration_ms": 13894, "kind": "stage_ended", "missing": [], "seq": 8, "stage": "stack", "t": 39.432, "ts": 1792276760.862}
+{"agents": ["review-correctness", "review-conventions", "review-path"], "kind": "stage_started", "seq": 9, "stage": "review", "t": 39.433, "ts": 1792276760.863}
+{"agent": "review-correctness", "fake": false, "kind": "agent_started", "seq": 10, "stage": "review", "t": 39.435, "ts": 1792276760.864}
+{"agent": "review-path", "fake": false, "kind": "agent_started", "seq": 11, "stage": "review", "t": 39.435, "ts": 1792276760.865}
+{"agent": "review-conventions", "fake": false, "kind": "agent_started", "seq": 12, "stage": "review", "t": 39.436, "ts": 1792276760.866}
+{"agent": "review-conventions", "duration_ms": 11483, "kind": "agent_ended", "seq": 13, "stage": "review", "status": "success", "t": 50.921, "ts": 1792276772.351}
+{"agent": "review-path", "duration_ms": 18352, "kind": "agent_ended", "seq": 14, "stage": "review", "status": "success", "t": 57.79, "ts": 1792276779.219}
+{"agent": "review-correctness", "duration_ms": 23830, "kind": "agent_ended", "seq": 15, "stage": "review", "status": "success", "t": 63.267, "ts": 1792276784.697}
+{"duration_ms": 23835, "kind": "stage_ended", "missing": [], "seq": 16, "stage": "review", "t": 63.269, "ts": 1792276784.698}
+{"kind": "stage_skipped", "seq": 17, "stage": "verify", "t": 63.27, "ts": 1792276784.7}
+{"kind": "stage_skipped", "seq": 18, "stage": "fix", "t": 63.271, "ts": 1792276784.7}
+{"bytes": 1955, "kind": "patch_taken", "seq": 19, "t": 63.327, "ts": 1792276784.756}
+{"kind": "scored", "reason": "resolved", "resolved": true, "seq": 20, "t": 90.968, "ts": 1792276812.397}
+{"excluded": false, "harness_error": false, "kind": "finished", "resolved": true, "seq": 21, "t": 93.438, "ts": 1792276814.868}

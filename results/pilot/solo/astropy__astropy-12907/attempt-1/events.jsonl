@@ -1,0 +1,8 @@
+{"arm": "solo", "attempt": 1, "fake": false, "image": "swebench/sweb.eval.x86_64.astropy_1776_astropy-12907:latest", "instance": "astropy__astropy-12907", "kind": "prepared", "seq": 0, "t": 1.844, "ts": 1792276412.498}
+{"agents": ["work"], "kind": "stage_started", "seq": 1, "stage": "work", "t": 0.0, "ts": 1792276412.498}
+{"agent": "work", "fake": false, "kind": "agent_started", "seq": 2, "stage": "work", "t": 0.001, "ts": 1792276412.499}
+{"agent": "work", "duration_ms": 16112, "kind": "agent_ended", "seq": 3, "stage": "work", "status": "success", "t": 16.115, "ts": 1792276428.613}
+{"duration_ms": 16115, "kind": "stage_ended", "missing": [], "seq": 4, "stage": "work", "t": 16.115, "ts": 1792276428.613}
+{"bytes": 1282, "kind": "patch_taken", "seq": 5, "t": 16.133, "ts": 1792276428.631}
+{"kind": "scored", "reason": "resolved", "resolved": true, "seq": 6, "t": 46.54, "ts": 1792276459.038}
+{"excluded": false, "harness_error": false, "kind": "finished", "resolved": true, "seq": 7, "t": 47.253, "ts": 1792276459.751}

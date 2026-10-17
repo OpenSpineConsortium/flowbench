@@ -1,0 +1,16 @@
+{
+  "excluded": false,
+  "harness_error": false,
+  "hidden_tests_seen": [
+    {
+      "agent": "work",
+      "found": "(?<![\\w.-])tests/test_self\\.py::TestRunTC::test_ignore_path_recursive_current_dir(?![\\w-])",
+      "kind": "hidden_test"
+    }
+  ],
+  "looked_outside": [],
+  "network_commands": [],
+  "orchestration_failure": false,
+  "orchestration_reasons": [],
+  "reasons": []
+}

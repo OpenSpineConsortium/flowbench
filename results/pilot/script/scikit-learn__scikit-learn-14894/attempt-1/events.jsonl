@@ -1,0 +1,30 @@
+{"arm": "script", "attempt": 1, "fake": false, "image": "swebench/sweb.eval.x86_64.scikit-learn_1776_scikit-learn-14894:latest", "instance": "scikit-learn__scikit-learn-14894", "kind": "prepared", "seq": 0, "t": 2.364, "ts": 1792276142.385}
+{"agents": ["build"], "kind": "stage_started", "seq": 1, "stage": "build", "t": 0.0, "ts": 1792276142.385}
+{"agent": "build", "fake": false, "kind": "agent_started", "seq": 2, "stage": "build", "t": 0.001, "ts": 1792276142.386}
+{"agent": "build", "duration_ms": 18507, "kind": "agent_ended", "seq": 3, "stage": "build", "status": "success", "t": 18.511, "ts": 1792276160.896}
+{"duration_ms": 18511, "kind": "stage_ended", "missing": [], "seq": 4, "stage": "build", "t": 18.511, "ts": 1792276160.896}
+{"agents": ["stack"], "kind": "stage_started", "seq": 5, "stage": "stack", "t": 18.512, "ts": 1792276160.897}
+{"agent": "stack", "fake": false, "kind": "agent_started", "seq": 6, "stage": "stack", "t": 18.513, "ts": 1792276160.898}
+{"agent": "stack", "duration_ms": 18156, "kind": "agent_ended", "seq": 7, "stage": "stack", "status": "success", "t": 36.671, "ts": 1792276179.056}
+{"duration_ms": 18159, "kind": "stage_ended", "missing": [], "seq": 8, "stage": "stack", "t": 36.671, "ts": 1792276179.056}
+{"agents": ["review-correctness", "review-conventions", "review-path"], "kind": "stage_started", "seq": 9, "stage": "review", "t": 36.672, "ts": 1792276179.057}
+{"agent": "review-correctness", "fake": false, "kind": "agent_started", "seq": 10, "stage": "review", "t": 36.674, "ts": 1792276179.059}
+{"agent": "review-conventions", "fake": false, "kind": "agent_started", "seq": 11, "stage": "review", "t": 36.675, "ts": 1792276179.059}
+{"agent": "review-path", "fake": false, "kind": "agent_started", "seq": 12, "stage": "review", "t": 36.676, "ts": 1792276179.06}
+{"agent": "review-conventions", "duration_ms": 14593, "kind": "agent_ended", "seq": 13, "stage": "review", "status": "success", "t": 51.271, "ts": 1792276193.656}
+{"agent": "review-correctness", "duration_ms": 17244, "kind": "agent_ended", "seq": 14, "stage": "review", "status": "success", "t": 53.921, "ts": 1792276196.305}
+{"agent": "review-path", "duration_ms": 22922, "kind": "agent_ended", "seq": 15, "stage": "review", "status": "success", "t": 59.602, "ts": 1792276201.987}
+{"duration_ms": 22930, "kind": "stage_ended", "missing": [], "seq": 16, "stage": "review", "t": 59.603, "ts": 1792276201.987}
+{"agents": ["verify-conventions-1", "verify-path-1"], "kind": "stage_started", "seq": 17, "stage": "verify", "t": 59.605, "ts": 1792276201.99}
+{"agent": "verify-path-1", "fake": false, "kind": "agent_started", "seq": 18, "stage": "verify", "t": 59.606, "ts": 1792276201.991}
+{"agent": "verify-conventions-1", "fake": false, "kind": "agent_started", "seq": 19, "stage": "verify", "t": 59.606, "ts": 1792276201.991}
+{"agent": "verify-conventions-1", "duration_ms": 14321, "kind": "agent_ended", "seq": 20, "stage": "verify", "status": "success", "t": 73.93, "ts": 1792276216.315}
+{"agent": "verify-path-1", "duration_ms": 25623, "kind": "agent_ended", "seq": 21, "stage": "verify", "status": "success", "t": 85.232, "ts": 1792276227.616}
+{"duration_ms": 25629, "kind": "stage_ended", "missing": [], "seq": 22, "stage": "verify", "t": 85.233, "ts": 1792276227.618}
+{"agents": ["fix"], "kind": "stage_started", "seq": 23, "stage": "fix", "t": 85.235, "ts": 1792276227.619}
+{"agent": "fix", "fake": false, "kind": "agent_started", "seq": 24, "stage": "fix", "t": 85.235, "ts": 1792276227.62}
+{"agent": "fix", "duration_ms": 10717, "kind": "agent_ended", "seq": 25, "stage": "fix", "status": "success", "t": 95.954, "ts": 1792276238.339}
+{"duration_ms": 10720, "kind": "stage_ended", "missing": [], "seq": 26, "stage": "fix", "t": 95.955, "ts": 1792276238.339}
+{"bytes": 2523, "kind": "patch_taken", "seq": 27, "t": 95.977, "ts": 1792276238.362}
+{"kind": "scored", "reason": "resolved", "resolved": true, "seq": 28, "t": 123.527, "ts": 1792276265.912}
+{"excluded": false, "harness_error": false, "kind": "finished", "resolved": true, "seq": 29, "t": 124.277, "ts": 1792276266.662}

@@ -1,0 +1,17 @@
+{"arm": "symphony", "attempt": 1, "fake": false, "image": "swebench/sweb.eval.x86_64.django_1776_django-12708:latest", "instance": "django__django-12708", "kind": "prepared", "seq": 0, "t": 6.137, "ts": 1792276632.577}
+{"agents": ["work"], "kind": "stage_started", "seq": 1, "stage": "work", "t": 0.0, "ts": 1792276632.577}
+{"agent": "work", "fake": false, "kind": "agent_started", "seq": 2, "stage": "work", "t": 0.001, "ts": 1792276632.578}
+{"agent": "work", "duration_ms": 36127, "kind": "agent_ended", "seq": 3, "stage": "work", "status": "success", "t": 36.131, "ts": 1792276668.708}
+{"duration_ms": 36131, "kind": "stage_ended", "missing": [], "seq": 4, "stage": "work", "t": 36.132, "ts": 1792276668.709}
+{"agents": ["review-correctness", "review-conventions", "review-path"], "kind": "stage_started", "seq": 5, "stage": "review", "t": 36.133, "ts": 1792276668.71}
+{"agent": "review-correctness", "fake": false, "kind": "agent_started", "seq": 6, "stage": "review", "t": 36.134, "ts": 1792276668.711}
+{"agent": "review-conventions", "fake": false, "kind": "agent_started", "seq": 7, "stage": "review", "t": 36.135, "ts": 1792276668.712}
+{"agent": "review-path", "fake": false, "kind": "agent_started", "seq": 8, "stage": "review", "t": 36.139, "ts": 1792276668.716}
+{"agent": "review-conventions", "duration_ms": 13387, "kind": "agent_ended", "seq": 9, "stage": "review", "status": "success", "t": 49.525, "ts": 1792276682.102}
+{"agent": "review-path", "duration_ms": 16047, "kind": "agent_ended", "seq": 10, "stage": "review", "status": "success", "t": 52.188, "ts": 1792276684.765}
+{"agent": "review-correctness", "duration_ms": 16756, "kind": "agent_ended", "seq": 11, "stage": "review", "status": "success", "t": 52.893, "ts": 1792276685.47}
+{"duration_ms": 16761, "kind": "stage_ended", "missing": [], "seq": 12, "stage": "review", "t": 52.894, "ts": 1792276685.471}
+{"kind": "stage_skipped", "seq": 13, "stage": "answer", "t": 52.895, "ts": 1792276685.472}
+{"bytes": 2015, "kind": "patch_taken", "seq": 14, "t": 52.945, "ts": 1792276685.522}
+{"kind": "scored", "reason": "resolved", "resolved": true, "seq": 15, "t": 81.233, "ts": 1792276713.81}
+{"excluded": false, "harness_error": false, "kind": "finished", "resolved": true, "seq": 16, "t": 83.33, "ts": 1792276715.907}

@@ -1,0 +1,17 @@
+{
+  "answer": {
+    "Bash": 2
+  },
+  "review-conventions": {
+    "Bash": 3
+  },
+  "review-correctness": {
+    "Bash": 3
+  },
+  "review-path": {
+    "Bash": 5
+  },
+  "work": {
+    "Bash": 4
+  }
+}
