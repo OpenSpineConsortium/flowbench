@@ -1,0 +1,31 @@
+{
+  "excluded": false,
+  "harness_error": false,
+  "hidden_tests_seen": [
+    {
+      "agent": "work",
+      "found": "(?<![\\w.-])test_serialize_result(?![\\w-])",
+      "kind": "hidden_test"
+    },
+    {
+      "agent": "review-correctness",
+      "found": "(?<![\\w.-])test_serialize_result(?![\\w-])",
+      "kind": "hidden_test"
+    },
+    {
+      "agent": "review-conventions",
+      "found": "(?<![\\w.-])test_serialize_result(?![\\w-])",
+      "kind": "hidden_test"
+    },
+    {
+      "agent": "review-path",
+      "found": "(?<![\\w.-])test_serialize_result(?![\\w-])",
+      "kind": "hidden_test"
+    }
+  ],
+  "looked_outside": [],
+  "network_commands": [],
+  "orchestration_failure": false,
+  "orchestration_reasons": [],
+  "reasons": []
+}

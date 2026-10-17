@@ -1,0 +1,30 @@
+{"arm": "script", "attempt": 1, "fake": false, "image": "swebench/sweb.eval.x86_64.pylint-dev_1776_pylint-7080:latest", "instance": "pylint-dev__pylint-7080", "kind": "prepared", "seq": 0, "t": 4.67, "ts": 1792276954.229}
+{"agents": ["build"], "kind": "stage_started", "seq": 1, "stage": "build", "t": 0.0, "ts": 1792276954.23}
+{"agent": "build", "fake": false, "kind": "agent_started", "seq": 2, "stage": "build", "t": 0.001, "ts": 1792276954.23}
+{"agent": "build", "duration_ms": 139121, "kind": "agent_ended", "seq": 3, "stage": "build", "status": "success", "t": 139.132, "ts": 1792277093.361}
+{"duration_ms": 139132, "kind": "stage_ended", "missing": [], "seq": 4, "stage": "build", "t": 139.132, "ts": 1792277093.362}
+{"agents": ["stack"], "kind": "stage_started", "seq": 5, "stage": "stack", "t": 139.133, "ts": 1792277093.363}
+{"agent": "stack", "fake": false, "kind": "agent_started", "seq": 6, "stage": "stack", "t": 139.134, "ts": 1792277093.363}
+{"agent": "stack", "duration_ms": 40499, "kind": "agent_ended", "seq": 7, "stage": "stack", "status": "success", "t": 179.635, "ts": 1792277133.864}
+{"duration_ms": 40502, "kind": "stage_ended", "missing": [], "seq": 8, "stage": "stack", "t": 179.635, "ts": 1792277133.865}
+{"agents": ["review-correctness", "review-conventions", "review-path"], "kind": "stage_started", "seq": 9, "stage": "review", "t": 179.637, "ts": 1792277133.866}
+{"agent": "review-conventions", "fake": false, "kind": "agent_started", "seq": 10, "stage": "review", "t": 179.639, "ts": 1792277133.868}
+{"agent": "review-correctness", "fake": false, "kind": "agent_started", "seq": 11, "stage": "review", "t": 179.639, "ts": 1792277133.868}
+{"agent": "review-path", "fake": false, "kind": "agent_started", "seq": 12, "stage": "review", "t": 179.64, "ts": 1792277133.869}
+{"agent": "review-path", "duration_ms": 17197, "kind": "agent_ended", "seq": 13, "stage": "review", "status": "success", "t": 196.84, "ts": 1792277151.069}
+{"agent": "review-conventions", "duration_ms": 24979, "kind": "agent_ended", "seq": 14, "stage": "review", "status": "success", "t": 204.621, "ts": 1792277158.85}
+{"agent": "review-correctness", "duration_ms": 65631, "kind": "agent_ended", "seq": 15, "stage": "review", "status": "success", "t": 245.276, "ts": 1792277199.505}
+{"duration_ms": 65640, "kind": "stage_ended", "missing": [], "seq": 16, "stage": "review", "t": 245.277, "ts": 1792277199.506}
+{"agents": ["verify-conventions-1", "verify-conventions-2"], "kind": "stage_started", "seq": 17, "stage": "verify", "t": 245.279, "ts": 1792277199.508}
+{"agent": "verify-conventions-2", "fake": false, "kind": "agent_started", "seq": 18, "stage": "verify", "t": 245.28, "ts": 1792277199.509}
+{"agent": "verify-conventions-1", "fake": false, "kind": "agent_started", "seq": 19, "stage": "verify", "t": 245.28, "ts": 1792277199.51}
+{"agent": "verify-conventions-1", "duration_ms": 18030, "kind": "agent_ended", "seq": 20, "stage": "verify", "status": "success", "t": 263.313, "ts": 1792277217.542}
+{"agent": "verify-conventions-2", "duration_ms": 19035, "kind": "agent_ended", "seq": 21, "stage": "verify", "status": "success", "t": 264.317, "ts": 1792277218.547}
+{"duration_ms": 19040, "kind": "stage_ended", "missing": [], "seq": 22, "stage": "verify", "t": 264.318, "ts": 1792277218.547}
+{"agents": ["fix"], "kind": "stage_started", "seq": 23, "stage": "fix", "t": 264.32, "ts": 1792277218.549}
+{"agent": "fix", "fake": false, "kind": "agent_started", "seq": 24, "stage": "fix", "t": 264.32, "ts": 1792277218.55}
+{"agent": "fix", "duration_ms": 16998, "kind": "agent_ended", "seq": 25, "stage": "fix", "status": "success", "t": 281.32, "ts": 1792277235.55}
+{"duration_ms": 17001, "kind": "stage_ended", "missing": [], "seq": 26, "stage": "fix", "t": 281.321, "ts": 1792277235.55}
+{"bytes": 2420, "kind": "patch_taken", "seq": 27, "t": 281.346, "ts": 1792277235.576}
+{"kind": "scored", "reason": "resolved", "resolved": true, "seq": 28, "t": 325.808, "ts": 1792277280.037}
+{"excluded": false, "harness_error": false, "kind": "finished", "resolved": true, "seq": 29, "t": 327.059, "ts": 1792277281.288}

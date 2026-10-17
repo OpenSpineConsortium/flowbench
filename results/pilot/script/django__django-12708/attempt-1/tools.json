@@ -1,0 +1,17 @@
+{
+  "build": {
+    "Bash": 5
+  },
+  "review-conventions": {
+    "Bash": 2
+  },
+  "review-correctness": {
+    "Bash": 5
+  },
+  "review-path": {
+    "Bash": 4
+  },
+  "stack": {
+    "Bash": 3
+  }
+}

@@ -1,0 +1,8 @@
+{"arm": "solo", "attempt": 1, "fake": false, "image": "swebench/sweb.eval.x86_64.django_1776_django-12708:latest", "instance": "django__django-12708", "kind": "prepared", "seq": 0, "t": 6.389, "ts": 1792276821.323}
+{"agents": ["work"], "kind": "stage_started", "seq": 1, "stage": "work", "t": 0.0, "ts": 1792276821.323}
+{"agent": "work", "fake": false, "kind": "agent_started", "seq": 2, "stage": "work", "t": 0.001, "ts": 1792276821.324}
+{"agent": "work", "duration_ms": 24036, "kind": "agent_ended", "seq": 3, "stage": "work", "status": "success", "t": 24.039, "ts": 1792276845.362}
+{"duration_ms": 24039, "kind": "stage_ended", "missing": [], "seq": 4, "stage": "work", "t": 24.04, "ts": 1792276845.363}
+{"bytes": 2115, "kind": "patch_taken", "seq": 5, "t": 24.105, "ts": 1792276845.428}
+{"kind": "scored", "reason": "resolved", "resolved": true, "seq": 6, "t": 52.67, "ts": 1792276873.993}
+{"excluded": false, "harness_error": false, "kind": "finished", "resolved": true, "seq": 7, "t": 54.773, "ts": 1792276876.096}

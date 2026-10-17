@@ -1,0 +1,26 @@
+{
+  "build": {
+    "Bash": 3
+  },
+  "fix": {
+    "Bash": 2
+  },
+  "review-conventions": {
+    "Bash": 3
+  },
+  "review-correctness": {
+    "Bash": 3
+  },
+  "review-path": {
+    "Bash": 4
+  },
+  "stack": {
+    "Bash": 3
+  },
+  "verify-conventions-1": {
+    "Bash": 2
+  },
+  "verify-path-1": {
+    "Bash": 4
+  }
+}

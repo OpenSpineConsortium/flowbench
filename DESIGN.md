@@ -298,8 +298,8 @@ logs/<tag>/<arm>/<instance>/attempt-<n>/:
   commands the agents ran), from the agents' streams while they are on
   disk.
 - The agents' transcripts and prompts, kept on the host that ran them and
-  never bundled, since they hold the run token; a bundle (not in the
-  scaffold yet) takes result, prediction, events, audit and the scorer's
+  never bundled, since they hold the run token; a bundle (flowbench/bundle.py)
+  takes result, prediction, events, audit and the scorer's
   log, as coordbench's bundle.py does, and keeps to the rule of
   symphony-template's docs/research/README.md
   for a record that is committed: counts, seconds, tokens, verdicts and

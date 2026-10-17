@@ -1,0 +1,8 @@
+pytest-dev__pytest-7490 True
+sphinx-doc__sphinx-11445 True
+matplotlib__matplotlib-24149 True
+django__django-14752 True
+scikit-learn__scikit-learn-14894 True
+astropy__astropy-12907 True
+django__django-12708 True
+pylint-dev__pylint-7080 True

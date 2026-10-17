@@ -1,0 +1,20 @@
+{"arm": "symphony", "attempt": 1, "fake": false, "image": "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-24149:latest", "instance": "matplotlib__matplotlib-24149", "kind": "prepared", "seq": 0, "t": 6.978, "ts": 1792274908.631}
+{"agents": ["work"], "kind": "stage_started", "seq": 1, "stage": "work", "t": 0.0, "ts": 1792274908.632}
+{"agent": "work", "fake": false, "kind": "agent_started", "seq": 2, "stage": "work", "t": 0.001, "ts": 1792274908.633}
+{"agent": "work", "duration_ms": 42432, "kind": "agent_ended", "seq": 3, "stage": "work", "status": "success", "t": 42.437, "ts": 1792274951.068}
+{"duration_ms": 42437, "kind": "stage_ended", "missing": [], "seq": 4, "stage": "work", "t": 42.438, "ts": 1792274951.069}
+{"agents": ["review-correctness", "review-conventions", "review-path"], "kind": "stage_started", "seq": 5, "stage": "review", "t": 42.438, "ts": 1792274951.07}
+{"agent": "review-correctness", "fake": false, "kind": "agent_started", "seq": 6, "stage": "review", "t": 42.44, "ts": 1792274951.072}
+{"agent": "review-conventions", "fake": false, "kind": "agent_started", "seq": 7, "stage": "review", "t": 42.441, "ts": 1792274951.072}
+{"agent": "review-path", "fake": false, "kind": "agent_started", "seq": 8, "stage": "review", "t": 42.442, "ts": 1792274951.073}
+{"agent": "review-conventions", "duration_ms": 10872, "kind": "agent_ended", "seq": 9, "stage": "review", "status": "success", "t": 53.316, "ts": 1792274961.947}
+{"agent": "review-path", "duration_ms": 22075, "kind": "agent_ended", "seq": 10, "stage": "review", "status": "success", "t": 64.52, "ts": 1792274973.151}
+{"agent": "review-correctness", "duration_ms": 32478, "kind": "agent_ended", "seq": 11, "stage": "review", "status": "success", "t": 74.922, "ts": 1792274983.553}
+{"duration_ms": 32485, "kind": "stage_ended", "missing": [], "seq": 12, "stage": "review", "t": 74.923, "ts": 1792274983.554}
+{"agents": ["answer"], "kind": "stage_started", "seq": 13, "stage": "answer", "t": 74.924, "ts": 1792274983.555}
+{"agent": "answer", "fake": false, "kind": "agent_started", "seq": 14, "stage": "answer", "t": 74.925, "ts": 1792274983.556}
+{"agent": "answer", "duration_ms": 30836, "kind": "agent_ended", "seq": 15, "stage": "answer", "status": "success", "t": 105.765, "ts": 1792275014.396}
+{"duration_ms": 30841, "kind": "stage_ended", "missing": [], "seq": 16, "stage": "answer", "t": 105.765, "ts": 1792275014.397}
+{"bytes": 1439, "kind": "patch_taken", "seq": 17, "t": 105.796, "ts": 1792275014.427}
+{"kind": "scored", "reason": "resolved", "resolved": true, "seq": 18, "t": 227.318, "ts": 1792275135.95}
+{"excluded": false, "harness_error": false, "kind": "finished", "resolved": true, "seq": 19, "t": 229.136, "ts": 1792275137.768}

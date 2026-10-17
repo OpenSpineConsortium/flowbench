@@ -1,0 +1,8 @@
+{"arm": "solo", "attempt": 1, "fake": false, "image": "swebench/sweb.eval.x86_64.matplotlib_1776_matplotlib-24149:latest", "instance": "matplotlib__matplotlib-24149", "kind": "prepared", "seq": 0, "t": 5.047, "ts": 1792275435.978}
+{"agents": ["work"], "kind": "stage_started", "seq": 1, "stage": "work", "t": 0.0, "ts": 1792275435.979}
+{"agent": "work", "fake": false, "kind": "agent_started", "seq": 2, "stage": "work", "t": 0.001, "ts": 1792275435.979}
+{"agent": "work", "duration_ms": 30551, "kind": "agent_ended", "seq": 3, "stage": "work", "status": "success", "t": 30.555, "ts": 1792275466.533}
+{"duration_ms": 30555, "kind": "stage_ended", "missing": [], "seq": 4, "stage": "work", "t": 30.555, "ts": 1792275466.533}
+{"bytes": 1213, "kind": "patch_taken", "seq": 5, "t": 30.612, "ts": 1792275466.59}
+{"kind": "scored", "reason": "resolved", "resolved": true, "seq": 6, "t": 147.585, "ts": 1792275583.563}
+{"excluded": false, "harness_error": false, "kind": "finished", "resolved": true, "seq": 7, "t": 149.365, "ts": 1792275585.344}
