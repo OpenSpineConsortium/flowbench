@@ -48,6 +48,16 @@ same model, the same tools, the same scorer (PARITY.md).
   error. A fix or answer stage names its file after the stage
   (`{flow_dir}/fixed-{stage}.json`), so an arm that lists such a stage
   twice keeps each round's file.
+- `agent`: optional, a Claude Code subagent file relative to the arm's
+  folder (front matter with name, description and tools; the body its
+  instructions), the format Symphony keeps its agents in
+  (symphony-template's .claude/agents/ and docs/agents/AGENTS.md, and
+  `python3 tools/agents.py import` there brings one in from anywhere).
+  The stage's agents run as it (`claude --agents FILE --agent NAME`), the
+  stage's prompt still the task, so an arm can measure a team's own
+  reviewer or developer. The run's model and the tools every arm is
+  denied hold over the file's: only its instructions and a narrower tool
+  list differ, which a new arm's PARITY.md row says (flowbench/agent_file.py).
 
 ## The placeholders
 

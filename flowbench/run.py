@@ -58,7 +58,7 @@ from pathlib import Path
 if __package__ in (None, ""):
     sys.path.insert(0, str(Path(__file__).resolve().parent.parent))
 from flowbench import backlog  # noqa: E402
-from flowbench import record, score, tasks  # noqa: E402
+from flowbench import agent_file, record, score, tasks  # noqa: E402
 
 HERE = Path(__file__).resolve().parent
 ARMS_DIR = HERE / "arms"
@@ -263,6 +263,11 @@ def load_arm(arm):
             raise RunError(f"{config_path}: stage {name}: needs is raised or confirmed")
         if "writes" in stage and not isinstance(stage["writes"], str):
             raise RunError(f"{config_path}: stage {name}: writes is a file name")
+        if "agent" in stage:
+            try:
+                stage["agent_definition"] = agent_file.read(arm_dir / str(stage["agent"]))
+            except agent_file.AgentFileError as error:
+                raise RunError(f"{config_path}: stage {name}: agent: {error}")
     config["dir"] = str(arm_dir)
     return config
 
@@ -532,15 +537,19 @@ def jobs_for_stage(plan, stage):
     return jobs
 
 
-def claude_command(model, effort, max_turns, disallowed, mcp_config):
+def claude_command(model, effort, max_turns, disallowed, mcp_config, agent=None):
     """Headless Claude Code on the login, with the login's own settings,
     MCP servers and subagents left out, so every agent of every arm has
-    the same tools: the built-in ones less the web and the Agent tool."""
+    the same tools: the built-in ones less the web and the Agent tool.
+    With agent, a (definition file, name) pair, the session runs as that
+    agent (agent_file.py), under the same model and the same denials."""
     command = ["claude", "--print", "--verbose", "--output-format=stream-json", "--permission-mode=bypassPermissions",
                "--model", model, "--effort", effort, "--setting-sources", "project", "--strict-mcp-config",
                "--mcp-config", str(mcp_config), "--disallowedTools", ",".join(disallowed)]
     if max_turns:
         command += ["--max-turns", str(int(max_turns))]
+    if agent:
+        command += ["--agents", str(agent[0]), "--agent", agent[1]]
     return command
 
 
@@ -620,10 +629,15 @@ def run_job(plan, stage, fields, template, limits, fake, events):
         job_path = agents_dir / f"{agent}.job.json"
         record.write_json(job_path, {"stage": stage["name"], "kind": stage["kind"], "agent": agent, "fields": fields,
                                      "options": plan["options"], "model": plan["model"], "stream": str(stream_path),
-                                     "writes": render(stage["writes"], fields) if stage.get("writes") else ""})
+                                     "writes": render(stage["writes"], fields) if stage.get("writes") else "",
+                                     "as_agent": (stage.get("agent_definition") or {}).get("name", "")})
         command = [sys.executable, "-I", str(HERE / "fake_agent.py"), str(job_path)]
     else:
-        command = claude_command(plan["model"], plan["effort"], limits["max_turns"], limits["disallowed"], run_dir / "mcp.json")
+        definition = None
+        if stage.get("agent_definition"):
+            definition = agent_file.write_definition(stage["agent_definition"], agents_dir / f"{agent}.agent.json")
+        command = claude_command(plan["model"], plan["effort"], limits["max_turns"], limits["disallowed"], run_dir / "mcp.json",
+                                 agent=definition)
     events.emit("agent_started", stage=stage["name"], agent=agent, fake=fake)
     started = time.monotonic()
     timed_out, exit_code = False, None
